@@ -1,0 +1,19 @@
+{
+  "name": "legacy-booking-service",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "8",
+      "jdkDistro": "tem",
+      "additionalVersions": "11,17,21,25",
+      "installMaven": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh"
+}
